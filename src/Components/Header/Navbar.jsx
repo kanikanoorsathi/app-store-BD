@@ -45,7 +45,7 @@ const Navbar = () => {
                    <img className="w-8" src={logo} alt="logo" />
                 </Link>
                 
-                App Store BD
+                AppStoreBD
                 
             </a>
           </div>
