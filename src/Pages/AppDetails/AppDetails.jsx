@@ -17,7 +17,7 @@ const AppDetails = () => {
   const appId = parseInt(id);
   console.log(id);
 
-  const data = useLoaderData();
+  const data = useLoaderData(); 
   // console.log(data);
   const singleApp = data?.find((app) => app.id === appId);
   // console.log(singleApp);
@@ -26,6 +26,8 @@ const AppDetails = () => {
   // if(!singleApp || true){
   //   return <p className="text-center items-center text-black text-2xl font-bold">Loading....</p>
   // }
+
+  // const singleApp = useLoaderData();  ekhon
 
   const { image, title, downloads, ratingAvg, reviews, description  } = singleApp || {};
 
@@ -81,24 +83,7 @@ const AppDetails = () => {
                      <button onClick={()=>handleInstalled(appId)} className="btn btn-outline text-black hover:bg-white">Installed </button>
               </div>
 
-              {/* bar Chart */}
-
-              {/* <div>
-                <h2 className="text-xl font-semibold text-black mb-4">Rating Breakdown</h2>
-                <ResponsiveContainer width="100%" height={300}>
-                  <BarChart data={singleApp?.ratings} layout="vertical" margin={{top: 20, right: 30, left: 40, bottom: 5}}>
-                    <CartesianGrid strokeDasharray="3 3"></CartesianGrid>
-                    <XAxis type="number"></XAxis>
-                    <YAxis type="category" dataKey="name"></YAxis>
-                    <Tooltip></Tooltip>
-                    <Legend></Legend>
-                    <Bar dataKey="count" fill="#4F46E5"></Bar>
-                  </BarChart>
-                </ResponsiveContainer>
-              </div> */}
-                {/* Go back */}
-
-                    <a className="btn bg-linear-to-br from-[#632EE3] to-[#9F62F2] transition-all duration-300 cursor-pointer text-white" href="/">Go Back!</a>
+                    {/* <a className="btn bg-linear-to-br from-[#632EE3] to-[#9F62F2] transition-all duration-300 cursor-pointer text-white" href="/">Go Back!</a> */}
             </div>
           </div>
 
