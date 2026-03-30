@@ -7,6 +7,7 @@ import Apps from '../Pages/Apps/Apps';
 import Installation from '../Pages/Installation/Installation';
 import AppDetails from '../Pages/appDetails/AppDetails';
 
+
 import { createHashRouter } from 'react-router';
 
 

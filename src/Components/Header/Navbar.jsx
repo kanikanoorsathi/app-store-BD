@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div>
       <div className="fixed top-0 left-0 z-50 w-full">
-        <div className="navbar bg-white shadow-sm text-black">
+        <div className="navbar bg-white shadow-sm text-black md:px-10">
           <div className="navbar-start">
             <div className="dropdown">
               <div
@@ -46,16 +46,16 @@ const Navbar = () => {
                 {links}
               </ul>
             </div>
-            <a className="btn btn-ghost cursor-pointer" href="/">
+            {/* <a className="btn btn-ghost cursor-pointer" href="/">
                   <img className="w-8" src={logo} alt="logo" />
                   <span className="text-purple-600 text-xl">AppStoreBD</span>   
-            </a>
-            {/* <Link to="/">
+            </a> */}
+            <Link to="/">
                  <div className="flex flex-col-2 ">
                     <img className="w-8" src={logo} alt="logo" />
                     <span className="text-purple-600 text-xl">AppStoreBD</span> 
                  </div>
-            </Link> */}
+            </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">

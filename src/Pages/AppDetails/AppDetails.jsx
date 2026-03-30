@@ -21,7 +21,7 @@ const AppDetails = () => {
 
   const data = useLoaderData(); 
   // console.log(data);
-  const singleApp = data?.find((app) => app.id === appId);
+  const singleApp = data?.find((app) => app.id === appId); 
   // console.log(singleApp);
   // console.log(typeof id, data);
 
@@ -50,15 +50,12 @@ const AppDetails = () => {
 
   return (
     <div>
-      {/* <div className='p-28 text-black' >
-                <h1>App Details</h1>
-            </div> */}
 
       <div>
         <div className="bg-white w-full pt-5">
           <div className="card card-side bg-white shadow-lg mx-auto p-8 mt-6 ">
             <figure>
-              <img className="w-30 h-auto"
+              <img className="w-10 h-10 md:w-30 md:h-auto"
                 src={image}
                 alt="App"
               />
@@ -86,7 +83,6 @@ const AppDetails = () => {
                 </div>
               </div>
               <div>
-                     {/* <button onClick={()=>handleInstalled(appId)} className="btn btn-outline text-black hover:bg-white">Installed </button> */}
                      <button onClick={()=>handleInstalled(appId)} disabled={isInstalled}
                          className={`btn btn-outline text-black ${
                             isInstalled ? 'bg-gray-300 cursor-not-allowed text-gray-500'
@@ -97,8 +93,6 @@ const AppDetails = () => {
                       </button>
                       <ToastContainer />
               </div>
-
-                    {/* <a className="btn bg-linear-to-br from-[#632EE3] to-[#9F62F2] transition-all duration-300 cursor-pointer text-white" href="/">Go Back!</a> */}
             </div>
           </div>
 
@@ -118,7 +112,7 @@ const AppDetails = () => {
                 </ResponsiveContainer>
               </div>
 
-              <div className="w-10/12 mx-auto">
+              <div className="w-full md:w-10/12 mx-auto">
                 <p className="font-normal text-sm text-gray-600 py-8"><span className="font-bold text-black">Description : </span>{description}</p>
               </div>
         </div>

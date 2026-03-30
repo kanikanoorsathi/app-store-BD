@@ -19,12 +19,10 @@ const AllApps = ({data}) => {
            <div>
             <Suspense fallback={<span>Loading...</span>}>
                 {/* <App appPromise={appPromise}></App> */}
-                <div className="md:grid md:grid-cols-2 lg:grid-cols-4 p-8 gap-8">
+                <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-8 gap-6">
                     
                     {
                         data.map((singleApp) =><App key={singleApp.id} singleApp={singleApp}>
-
-                            <button>Uninstall</button>
                         </App>)
                     }
 
