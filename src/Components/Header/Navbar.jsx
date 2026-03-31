@@ -52,8 +52,8 @@ const Navbar = () => {
             </a> */}
             <Link to="/">
                  <div className="flex flex-col-2 ">
-                    <img className="w-8" src={logo} alt="logo" />
-                    <span className="text-purple-600 text-xl">AppStoreBD</span> 
+                    <img className="w-4 md:w-8" src={logo} alt="logo" />
+                    <span className="text-purple-600 text-sm md:text-xl hidden sm:block "> AppStoreBD</span> 
                  </div>
             </Link>
           </div>
@@ -62,8 +62,8 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <div className="navbar-end">
-            <a className="btn bg-linear-to-br from-[#632EE3] to-[#9F62F2] transition-all duration-300 cursor-pointer text-white" href="https://github.com/kanikanoorsathi"><VscGithub size={20} />Contribute</a>
+          <div className="navbar-end ">
+            <a className="btn bg-linear-to-br from-[#632EE3] to-[#9F62F2] transition-all duration-300 cursor-pointer text-white text-xs md:text-sm" href="https://github.com/kanikanoorsathi"><VscGithub size={20} />Contribute</a>
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@ const App = ({ singleApp, showButton, onUninstall, children }) => {
       <div className=" shadow-lg items-center p-1 bg-white">
         {/* <Link to={`/appDetails/${id}`}> { */}
         {children ? (
-          <div className=" flex justify-between items-center w-full p-4">
+          <div className=" flex flex-wrap gap-4 justify-between items-center w-full p-4">
             <Link to={`/appDetails/${id}`} className="flex-1">
               {children}
             </Link>
